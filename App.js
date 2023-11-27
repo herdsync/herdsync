@@ -14,7 +14,7 @@ import {
          Button
 } from 'react-native';
 
-
+// comment
 //const Logo = require('/assets/Screenshot_2023-08-09_192841-removebg-preview.png');
 
 const Stack = createStackNavigator();
