@@ -1,0 +1,16 @@
+export const ScreenNames = {
+  LOGIN: "Login",
+  HOME: "Home",
+  OTP: "OTP",
+  BOTTOM_TAB: "BottomTab",
+  WELCOME_SCREEN: "WelcomeScreen",
+  SIGN_UP: "SignUp",
+  RESET_PASSWORD: "ResetPassword",
+  FORGOT_PASSWORD: "ForgotPassword",
+  TODO: "TODO",
+  ANIMAL: "Animal",
+  LAND: "Land",
+  SEARCH: "Search",
+  SETTINGS: "Settings",
+  ANIMAL_DETAILS_SCREEN: "AnimalDetailsScreen",
+};
