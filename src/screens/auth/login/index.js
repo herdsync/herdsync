@@ -34,7 +34,7 @@ export default function Login({ navigation }) {
     formState: { isValid, errors },
   } = useForm({
     mode: "all",
-    resolver: yupResolver(LoginFormValidation), // Replace with your validation schema
+    resolver: yupResolver(LoginFormValidation),
   });
 
   const checkUser = async (email, password) => {
@@ -52,6 +52,8 @@ export default function Login({ navigation }) {
     if (res) {
       if (res.password === password) {
         dispatch(login(res));
+        setLoading(false);
+
       } else {
         console.log("wrong password");
         Toast.show({
@@ -72,7 +74,7 @@ export default function Login({ navigation }) {
   };
   const loginHandler = async (values) => {
     setLoading(true);
-    checkUser(values.email, values.password);
+    await checkUser(values.email, values.password);
   };
 
   return (
